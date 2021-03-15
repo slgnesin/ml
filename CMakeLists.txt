@@ -1,0 +1,6 @@
+cmake_minimum_required (VERSION 2.8)
+project(nn)
+include_directories(data nn)
+aux_source_directory(data SRC_LIST)
+aux_source_directory(nn SRC_LIST1)
+add_executable(main.exe main.cpp ${SRC_LIST} ${SRC_LIST1})

@@ -8,10 +8,12 @@ class Matrix
 {
     private:
     public:
+    //行列式求值
+    double determinant_Eval(std::vector<std::vector<double>> &mat_A);
     //转置
-    std::vector<std::vector<double>> mat_Transpose(std::vector<std::vector<double>> &mat_A);
+    std::vector<std::vector<double>> matrix_Transpose(std::vector<std::vector<double>> &mat_A);
     //乘法
-    std::vector<std::vector<double>> mat_Multiply(std::vector<std::vector<double>> &mat_A,std::vector<std::vector<double>> &mat_B);
+    std::vector<std::vector<double>> matrix_Multiply(std::vector<std::vector<double>> &mat_A,std::vector<std::vector<double>> &mat_B);
 };
 
 #endif
